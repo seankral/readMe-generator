@@ -35,36 +35,37 @@ function renderLicenseBadge(license) {
 }
 
 module.exports = data => {
-    return ` 
-        # ${data.title}
 
-        ${renderLicenseBadge(data.license)}
+return `
+# ${data.title}
 
-        ## Description
-        ${data.description}
+${renderLicenseBadge(data.license)}
 
-        ## Table of Content
-        ${tableOfContents(data.tableOfContents)}
+## Description
+${data.description}
 
-        ## Installation
-        ${data.installation}
+## Table of Content
+${tableOfContents(data.tableOfContents)}
 
-        ## Usage
-        ${data.usage}
+## Installation
+${data.installation}
 
-        ## Tests
-        ${data.tests}
+## Usage
+${data.usage}
 
-        ## contributing
-        ${data.contributing}
+## Tests
+${data.tests}
 
-        ${renderLicenseLink(data.license)}
+## contributing
+${data.contributing}
 
-        ## Questions
-        If you have any questions you can contact me at:
-        [Email](mailto:${data.email})
-        [GitHub](https://github.com/${data.github})
-    `;
+${renderLicenseLink(data.license)}
+
+## Questions
+If you have any questions you can contact me at:
+[Email](mailto:${data.email})
+[GitHub](https://github.com/${data.github})
+`;
 }
 
 
