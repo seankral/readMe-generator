@@ -2,6 +2,7 @@
 const fs = require('fs');
 const inquirer = require('inquirer');
 const generateMarkdown = require('./src/file-template');
+const { writeFile } = require('./utils/generateMarkdown');
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {}
@@ -76,7 +77,7 @@ function init() {
             {
                 type: 'input',
                 name: 'email',
-                message: 'Please provide a full link to your email address.'
+                message: 'Please provide your email address.'
             }
         ]);
 }
@@ -87,4 +88,12 @@ init()
         console.log(readMeData)
         return generateMarkdown(readMeData)
     })
-    .then()
+    .then(markDown => {
+        return writeFile(markDown)
+    })
+    .then(writeFileResponse => {
+        console.log(writeFileResponse)
+    })
+    .catch(err => {
+        console.log(err)
+    });
