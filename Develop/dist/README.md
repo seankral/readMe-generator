@@ -22,7 +22,7 @@ Clone the code on to you local machine. Using the CML, get to the directory wher
 The user will be Prompted with multiple questions asking what they'd to include in their README file. Answer all questions and the application will create a README file in the 'dist' directory of the folder.
 
 ## Tests
-Try multiple 'Table of Content' sizes in the checkbox question prompt.
+N/A
 
 ## contributing
 At the moment, we are not accepting contributions to the project. We plan on making it open source in the future and this section will be updated.
