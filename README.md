@@ -1,3 +1,3 @@
 # README Generator
 
-[Demo](./develop/images/readme-generator-walkthrough.mp4)
+[Demo](./images/readme-generator-walkthrough.mp4)
