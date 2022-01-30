@@ -10,7 +10,7 @@ Go to the github repository and clone the code on to your local machine. (must h
 
 ## Usage
 
-From your local machine open up you CML and run `node index.js` from the root directory. You will be prompted with questions that will be entered into your `README` file once they are answered. Upon completion of the question prompts, a `README` file will be created in the `dist` directory.
+From your local machine open up your CML and run `node index.js` from the root directory. You will be prompted with questions that will be entered into your `README` file once they are answered. Upon completion of the question prompts, a `README` file will be created in the `dist` directory.
 
 ## Made with:
 
